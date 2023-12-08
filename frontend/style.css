@@ -1,0 +1,122 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.upload-input {
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.upload-button {
+    background-color: #6c757d;;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #343a40;
+}
+
+/* Styles for Data Preview */
+.data-preview {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.scrollable {
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Adjust table layout */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
+/* Responsive table */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+.prediction {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Probabilities Styling */
+.probabilities {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.probabilities-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.probabilities-table th, .probabilities-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.probabilities-table th {
+    background-color: #f0f0f0;
+}

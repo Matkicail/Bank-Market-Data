@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Ad Campaign Predictor V1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Bank Ad Campaign Predictor V1</h1>
+        <input type="file" id="fileInput" accept=".csv" class="upload-input"/>
+        <button id="uploadButton" class="upload-button">Upload CSV</button>
+
+        <!-- Add this div for displaying the CSV file preview -->
+        <div id="dataPreview" class="data-preview"></div>
+
+        <!-- Optional: Add this div for displaying predictions -->
+        <div id="predictions" class="predictions"></div>
+    </div>
+    <div id="prediction" class="prediction"></div>
+    <div id="probabilities" class="probabilities"></div>
+    <div id="explanation" class="explanation"></div>
+    <script src="script.js"></script>
+</body>
+</html>
