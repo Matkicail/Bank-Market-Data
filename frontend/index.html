@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Ad Campaign Predictor V1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Bank Ad Campaign Predictor V1</h1>
-        <input type="file" id="fileInput" accept=".csv" class="upload-input"/>
-        <button id="uploadButton" class="upload-button">Upload CSV</button>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Bank Ad Campaign Predictor V1</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="fileInput" accept=".csv">
+                    <label class="custom-file-label" for="fileInput">Choose CSV file</label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button id="uploadButton" class="btn btn-primary btn-block">Upload</button>
+            </div>
+        </div>
 
         <!-- Add this div for displaying the CSV file preview -->
-        <div id="dataPreview" class="data-preview"></div>
+        <div id="dataPreview" class="mt-4"></div>
 
         <!-- Optional: Add this div for displaying predictions -->
-        <div id="predictions" class="predictions"></div>
+        <div id="predictions" class="mt-4"></div>
     </div>
-    <div id="prediction" class="prediction"></div>
-    <div id="probabilities" class="probabilities"></div>
-    <div id="explanation" class="explanation"></div>
+    <div id="prediction" class="container mt-4"></div>
+    <div id="probabilities" class="container mt-4"></div>
+    <div id="explanation" class="container mt-4"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -65,12 +65,13 @@ function displayCsvPreview(csvFile) {
         const headers = lines[0];
         const rows = lines.slice(1, 6); // Display first 5 rows for preview
 
-        let previewHtml = "<h2>Data Preview</h2><div class='scrollable'><table>";
-        previewHtml += "<tr>" + headers.map(header => `<th>${header}</th>`).join("") + "</tr>";
+        let previewHtml = "<h2>Data Preview</h2><div class='scrollable-table'><table class='table'>";
+        previewHtml += "<thead><tr>" + headers.map(header => `<th>${header}</th>`).join("") + "</tr></thead>";
+        previewHtml += "<tbody>";
         rows.forEach(row => {
             previewHtml += "<tr>" + row.map(cell => `<td>${cell}</td>`).join("") + "</tr>";
         });
-        previewHtml += "</table></div>";
+        previewHtml += "</tbody></table></div>";
         document.getElementById("dataPreview").innerHTML = previewHtml;
     };
     reader.readAsText(csvFile);
