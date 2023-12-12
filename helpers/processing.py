@@ -4,7 +4,10 @@ import traceback
 import sys
 
 
-def explain_errors():
+def explain_errors() -> None: # could use a decorator instead.
+    """
+    _summary_
+    """
     exc_type, exc_value, exc_traceback = sys.exc_info()
     # Extract unformatter stack traces as a list of strings
     traceback_details = traceback.format_tb(exc_traceback)
