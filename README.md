@@ -14,7 +14,7 @@ uvicorn main:app --reload --port 8000
 ```
 
 ## Running
-In the front end, just double click on the index which will take you to a browser where you can submit the data contained in the `example.csv` file.
+In the `frontend` folder you will find `index.html`, just double click on the index which will take you to a browser where you can submit the data contained in the `example.csv` file.
 This file is just one example from the validation data set the model was trained on, which I took out. 
 However, it provides a simple showcase of the model's predictions.
 Additionally, you can click on the explained link to see why the model made that prediction.
